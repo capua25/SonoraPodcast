@@ -245,18 +245,18 @@ p {
 
 a {
     all: unset;
-    color: var(--color10);
+    color: var(--color9);
     cursor: pointer;
     transition: all 0.5s;
 }
 
 a:hover {
-    color: var(--color9);
+    color: var(--color11);
     transition: all 0.5s;
 }
 
 .highlight {
-    color: var(--color10);
+    color: var(--color9);
 }
 
 #about p {
