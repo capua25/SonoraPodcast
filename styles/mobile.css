@@ -1,48 +1,195 @@
-@media (max-width: 950px)  {
-    #nav_logo1{
-        height: 250px;
-        animation-name: showup_logo1;
-        animation-duration: 0.6s;
-    }
-    nav{
-        width: 100%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        background-color: transparent;
-    }
-    #about p{
-        width: 585px;
-    }
-    #about h1{
-        width: 585px;
-    }
-    #nav_logo1{
-        margin-left: 15px;
-    }
+@media (max-width: 1100px) {
+  #nav_logo1 {
+    height: 250px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 90%;
+    aspect-ratio: 16/9;
+  }
+
+  #nav_logo1 {
+    margin-left: 15px;
+  }
+
+  #video,
+  #about,
+  #carrousel,
+  #cifespod {
+    width: 100%;
+  }
+
+  .sidebar-contact {
+    width: 100%;
+    height: 100%;
+    left: -100%;
+  }
+
+  .sidebar-contact .toggle {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+  }
+
+  .sidebar-contact.active .toggle {
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+  }
+
+  .scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
 }
-@media(max-width:768px) {
-    .sidebar-contact {
-      width: 100%;
-      height: 100%;
-      left: -100%;
+
+@media (max-width: 605px) {
+  body {
+    max-width: 100svw;
+    background-image: url('../resources/fondo-mobile.svg');
+    background-color: var(--color9);
+    background-position: top;
+    background-size: cover;
+  }
+
+  nav {
+    height: 40svh;
+  }
+
+  footer {
+    max-width: 100svw;
+    padding: 0 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  footer h3{
+    margin: 0 25px;
+  }
+
+  #nav_logo1 {
+    height: unset;
+    width: 85svw;
+  }
+
+  #date {
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #video,
+  #about,
+  #carrousel,
+  #cifespod {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 90svw;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  #about p,
+  #cifespod p,
+  #cifespod h2,
+  #carrousel h2 {
+    width: 90%;
+  }
+
+  #cifespod img {
+    height: 250px;
+  }
+
+  #date h3 {
+    font-size: 25px;
+    margin: 15px;
+  }
+
+  #scrolldown {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-contact {
+    top: 87%;
+  }
+  
+  .float-tw {
+    top: 605px;
+  }
+  
+  .float-ig {
+    top: 660px;
+  }
+  
+  .float-yt {
+    top: 715px;
+  }
+  
+  .float-spotify {
+    top: 770px;
+  }
+  
+  @supports (calc()) {
+    .float-tw {
+      top: calc(60svh + 55px);
     }
   
-    .sidebar-contact .toggle {
-      top: 50%;
-      transform: translateY(-50%);
-      transition: 0.5s;
+    .float-ig {
+      top: calc(60svh + 110px);
     }
   
-    .sidebar-contact.active .toggle {
-      top: 0;
-      right: 0;
-      transform: translateY(0);
+    .float-yt {
+      top: calc(60svh + 165px);
     }
   
-    .scroll {
-      width: 100%;
-      height: 100%;
-      overflow-y: auto;
+    .float-spotify {
+      top: calc(60svh + 220px);
     }
   }
+}
+
+@media (max-width: 390px){
+  .float-tw {
+    top: 450px;
+  }
+  
+  .float-ig {
+    top: 505px;
+  }
+  
+  .float-yt {
+    top: 560px;
+  }
+  
+  .float-spotify {
+    top: 615px;
+  }
+}

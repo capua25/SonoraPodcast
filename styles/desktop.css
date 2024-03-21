@@ -1,1 +1,17 @@
-@media (min-width: 951px) {}
+@media (max-width: 1366px) and (min-width: 900px) {
+    .float-tw {
+        top: 255px;
+    }
+
+    .float-ig {
+        top: 310px;
+    }
+
+    .float-yt {
+        top: 365px;
+    }
+
+    .float-spotify {
+        top: 420px;
+    }
+}

@@ -1,80 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Sonora Podcast</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/mobile.css">
-    <link rel="stylesheet" href="styles/icons.css">
 </head>
+
 <body>
-    <div id="backgroundsvg">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" 
-        viewBox="0 0 1422 800">
-            <defs>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" 
-                id="oooscillate-grad">
-                    <stop stop-color="#472D85" stop-opacity="1" offset="0%"></stop>
-                    <stop stop-color="#C22FA7" stop-opacity="1" offset="100%"></stop>
-                </linearGradient>
-            </defs><g stroke-width="2" stroke="url(#oooscillate-grad)" fill="none" stroke-linecap="round">
-            <path d="M 0 572 Q 355.5 -100 711 400 Q 1066.5 900 1422 572" opacity="0.05"></path>
-            <path d="M 0 550 Q 355.5 -100 711 400 Q 1066.5 900 1422 550" opacity="0.09"></path>
-            <path d="M 0 528 Q 355.5 -100 711 400 Q 1066.5 900 1422 528" opacity="0.13"></path>
-            <path d="M 0 506 Q 355.5 -100 711 400 Q 1066.5 900 1422 506" opacity="0.16"></path>
-            <path d="M 0 484 Q 355.5 -100 711 400 Q 1066.5 900 1422 484" opacity="0.20"></path>
-            <path d="M 0 462 Q 355.5 -100 711 400 Q 1066.5 900 1422 462" opacity="0.24"></path>
-            <path d="M 0 440 Q 355.5 -100 711 400 Q 1066.5 900 1422 440" opacity="0.28"></path>
-            <path d="M 0 418 Q 355.5 -100 711 400 Q 1066.5 900 1422 418" opacity="0.32"></path>
-            <path d="M 0 396 Q 355.5 -100 711 400 Q 1066.5 900 1422 396" opacity="0.35"></path>
-            <path d="M 0 374 Q 355.5 -100 711 400 Q 1066.5 900 1422 374" opacity="0.39"></path>
-            <path d="M 0 352 Q 355.5 -100 711 400 Q 1066.5 900 1422 352" opacity="0.43"></path>
-            <path d="M 0 330 Q 355.5 -100 711 400 Q 1066.5 900 1422 330" opacity="0.47"></path>
-            <path d="M 0 308 Q 355.5 -100 711 400 Q 1066.5 900 1422 308" opacity="0.51"></path>
-            <path d="M 0 286 Q 355.5 -100 711 400 Q 1066.5 900 1422 286" opacity="0.54"></path>
-            <path d="M 0 264 Q 355.5 -100 711 400 Q 1066.5 900 1422 264" opacity="0.58"></path>
-            <path d="M 0 242 Q 355.5 -100 711 400 Q 1066.5 900 1422 242" opacity="0.62"></path>
-            <path d="M 0 220 Q 355.5 -100 711 400 Q 1066.5 900 1422 220" opacity="0.66"></path>
-            <path d="M 0 198 Q 355.5 -100 711 400 Q 1066.5 900 1422 198" opacity="0.70"></path>
-            <path d="M 0 176 Q 355.5 -100 711 400 Q 1066.5 900 1422 176" opacity="0.73"></path>
-            <path d="M 0 154 Q 355.5 -100 711 400 Q 1066.5 900 1422 154" opacity="0.77"></path>
-            <path d="M 0 132 Q 355.5 -100 711 400 Q 1066.5 900 1422 132" opacity="0.81"></path>
-            <path d="M 0 110 Q 355.5 -100 711 400 Q 1066.5 900 1422 110" opacity="0.85"></path>
-            <path d="M 0 88 Q 355.5 -100 711 400 Q 1066.5 900 1422 88" opacity="0.89"></path>
-            <path d="M 0 66 Q 355.5 -100 711 400 Q 1066.5 900 1422 66" opacity="0.92"></path>
-            <path d="M 0 44 Q 355.5 -100 711 400 Q 1066.5 900 1422 44" opacity="0.96"></path></g>
-        </svg>
-    </div>
     <header>
         <nav id="navbar" class="">
+            <div id="date" class="date">
+                <h3>9-NOV</h3>
+                <h3>2024</h3>
+            </div>
             <img id="nav_logo1" src="resources/Sonora.png">
             <img id="nav_logo2" class="logo_hidden" src="resources/Sonora.png">
+            <button id="scrolldown">&darr;</button>
         </nav>
     </header>
     <main>
         <!-- bloque etiqueta negra -->
         <div class="float-sm">
             <div class="float-sm">
-                <div class="fl-fl float-fb">
-                  <img class="fa" src="resources/icons/facebook.svg">
-                  <a href="" target="_blank"> Facebook</a>
-                </div>
-                <div class="fl-fl float-tw">
+                <div class="fl-fl float-tw hide-fl">
                     <img class="fa" src="resources/icons/X.svg">
-                    <a href="" target="_blank"> X-Twitter</a>
+                    <a href="https://x.com/SonoraPodcastUy" target="_blank"> X-Twitter</a>
                 </div>
-                <div class="fl-fl float-ig">
+                <div class="fl-fl float-ig hide-fl">
                     <img class="fa" src="resources/icons/instagram.svg">
-                    <a href="" target="_blank"> Instagram</a>
+                    <a href="https://www.instagram.com/sonorapodcastuy/" target="_blank"> Instagram</a>
                 </div>
-                <div class="fl-fl float-yt">
+                <div class="fl-fl float-yt hide-fl">
                     <img class="fa" src="resources/icons/youtube.svg">
                     <a href="" target="_blank"> Youtube</a>
                 </div>
-                <div class="fl-fl float-spotify">
+                <div class="fl-fl float-spotify hide-fl">
                     <img class="fa" src="resources/icons/spotify.svg">
                     <a href="" target="_blank"> Spotify</a>
                 </div>
@@ -83,59 +51,67 @@
         <!-- bloque etiqueta negra -->
 
         <div class="sidebar-contact" id="sidebarcontact">
-            <div class="toggle" id="togglebtn"></div>
-            <h2>Contact Us</h2>
+            <div class="toggle hide-toggle" id="togglebtn"></div>
+            <h2>Contacto</h2>
             <div class="scroll"></div>
-            <form>
-              <input id="email" type="email" name="contact" placeholder="Email">
-              <textarea name="contact" id="mensaje" placeholder="Mensaje"></textarea>
-              <input id="submit" type="submit" name="" value="Enviar">
+            <form name="contact" action="mailto:uycast@protonmail.com?subject=Contacto Sonora Web" method="post" enctype="text/plain">
+                <input id="email" type="email" name="contact" placeholder="Email">
+                <textarea name="contact" id="mensaje" placeholder="Mensaje"></textarea>
+                <input id="submit" type="submit" name="" value="Enviar">
             </form>
-            </div>
-          </div>
-
+        </div>
         <!-- bloque float form -->
 
-        <!-- <div class="float-sm">
-            <div class="float-sm">
-                <div id="float-contacto" class="fl float-rs">
-                    <h3>Contacto</h3>
-                    <form action="#" method="post" id="float-form_contacto">
-                        <input type="email" name="contact-float" id="email" placeholder="E-Mail">
-                        <textarea name="contact" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <input id="submit" type="submit" value="Enviar">
-                    </form>
-                </div>
-            </div>
-        </div> -->
-
-  
         <div id="video">
-
+            <h1>Sonora 2023</h1>
+            <iframe src="https://www.youtube.com/embed/mEJ_jxFJU_0?si=gbcQjYYjMk78bhRi" title="Sonora 2023"
+                frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+                allowfullscreen></iframe>
         </div>
         <div id="about">
             <h1>¿Qué es Sonora?</h1>
-            <p>Sonora es el primer evento de podcasting independiente del Uruguay. Es un encuentro para ver podcasts en vivo, compartir anécdotas sobre el detrás de escena, charlar con podcasteros, y conocer más sobre el arte de hacer escuchar.</p>
-            <p>Seas escucha, creador o simplemente tengas curiosidad por el mundo del podcast, este evento es para vos.</p>    
+            <h3>Sonora es el primer evento de podcasting del Uruguay.</h3>
+            <p>Sonora es un encuentro para ver podcasts en vivo, charlas, talleres y mesas de debate.
+                En 2024, vuelve para ofrecerte un evento renovado. Será el próximo <span class="highlight">sábado 9 de
+                    noviembre</span> en <span class="highlight">Montevideo</span>.
+                Próximamente vamos a compartir los invitados y participantes de esta edición.
+                La entrada es <span class="highlight">libre</span> y con <span class="highlight">cupos limitados</span>.
+            </p>
+        </div>
+        <div id="cifespod">
+            <h2>Circuito Iberoamericano de Festivales de Podcast</h2>
+            <div class="container">
+                <p>Sonora forma parte del Circuito Iberoamericano de Festivales de Podcast junto a <a
+                        href="https://www.estacionpodcast.com/" target="_blank">Estación Podcast</a> y <a
+                        href="https://prosodia.es/" target="_blank">Prosodia</a> de España, <a
+                        href="https://www.instagram.com/podcastaloido/" target="_blank">Podcast Al Oído</a> y <a
+                        href="https://www.podcastinacion.com/" target="_blank">Podcastinación</a> de Colombia, <a
+                        href="https://www.festivalestereo.ar/" target="_blank">Estéreo Festival</a> de Argentina, y <a
+                        href="https://www.podcastfestlatam.com/" target="_blank">Podcast Fest</a> de Chile.
+                </p>
+                <img src="./resources/Logo-CIFESPOD.png" alt="CIFESPOD LOGO">
+            </div>
         </div>
         <div id="carrousel">
-
+            <h2>Más sobre nuestra edición 2023</h2>
+            <div class="pic-ctn">
+                <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+            </div>
         </div>
     </main>
     <footer>
-        <div id="contacto">
-            <h2>Contacto</h2>
-            <form action="#" method="post" id="form_contacto">
-                <input type="email" name="contact" id="email" placeholder="E-Mail">
-                <textarea name="contact" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input id="submit" type="submit" value="Enviar">
-            </form>
-        </div>
-        <div id="foot">
-
-        </div>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
     </footer>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/form.js"></script>
 </body>
+
 </html>

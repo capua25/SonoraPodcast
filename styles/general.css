@@ -1,9 +1,20 @@
 :root {
-    --color1: #9D2972;
+    /* Paleta 1*/
+    --color4: #9D2972cc;
     --color2: #C22FA7;
-    --color3: #46154B;
-    --color4: #7A19B6;
+    --color3: #5d1c64;
+    --color1: #7A19B6;
     --color5: #472D85;
+    --color6: #ff76e6aa;
+
+
+    /* Paleta 2 */
+    --color7: #4c44cf;
+    --color8: #e953da;
+    --color9: #6EC1E4;
+    --color10: #142f48;
+    --color11: #f5c1f0;
+    --color12: #9D2972;
 }
 
 @font-face {
@@ -30,65 +41,183 @@ body {
     color: white;
     margin: 0;
     scrollbar-gutter: stable;
-    background: linear-gradient(var(--color1) 25%, var(--color5) 40%, var(--color5) 60%, var(--color3));
-    ;
+    background-image: url('../resources/fondo-desktop-ondas.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color9);
+    background-attachment: fixed;
 }
 
 body::-webkit-scrollbar {
     width: 0;
+    height: 0;
 }
 
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video,
+#about,
+#carrousel,
+#cifespod {
+    background-color: var(--color4);
+    padding: 50px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 2px #00000050;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cifespod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cifespod h3 {
+    max-width: 900px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    max-width: 900px;
+}
+
+iframe {
+    width: 900px;
+    aspect-ratio: 16/9;
+}
+
+#carrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
 }
 
 nav {
     width: 100%;
-    height: 380px;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: transparent;
+}
 
-    z-index: 10;
+#scrolldown {
+    all: unset;
+    text-align: center;
+    font-family: 'Titulos';
+    font-size: 50px;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#scrolldown:hover {
+    background-color: #00000050;
+    transition: all 0.6s;
+}
+
+/**/
+#date {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#date h3 {
+    font-size: 50px;
+    margin: 25px;
+    filter: drop-shadow(3px 3px 1px #00000050);
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: showdate 1s ease;
+}
+
+@keyframes showdate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hide {
+    display: none !important;
 }
 
 .nav_hidden {
     height: 100px;
+    flex-direction: row;
     justify-content: left;
+    align-items: start;
     position: fixed;
-    background: linear-gradient(var(--color5) 80%, transparent);
     animation-name: showup_logo2;
     animation-duration: 0.5s;
 }
 
 #nav_logo1 {
-    height: 380px;
-    animation-name: showup_logo1;
-    animation-duration: 0.6s;
+    height: 400px;
+    margin-top: 10%;
+    filter: drop-shadow(5px 5px 1px #00000050);
+    /*animation-name: showup_logo1;
+    animation-duration: 1s;*/
     z-index: 2;
 }
 
 #nav_logo2 {
     height: 100px;
-    margin-left: 10%;
+    margin-left: 5px;
     z-index: 2;
+    filter: drop-shadow(2px 2px 1px #00000050);
 }
 
 .logo_hidden {
     display: none;
 }
 
+/* No anda bien
 @keyframes showup_logo1 {
     from {
-        transform: translateY(-380px);
+        transform: translateY(100vh);
     }
 
     to {
         transform: translateY(0px);
     }
 }
-
+*/
 @keyframes showup_logo2 {
     from {
         transform: translateY(-100px);
@@ -101,23 +230,43 @@ nav {
 
 h1 {
     font-family: 'Titulos';
-    font-size: 100px;
+    font-size: 75px;
     text-align: center;
     z-index: 2;
+    margin: 20px;
+    font-weight: bolder;
 }
 
 p {
     font-family: 'Parrafos';
-    font-size: 20px;
+    font-size: 25px;
     z-index: 2;
 }
 
+a {
+    all: unset;
+    color: var(--color10);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: var(--color9);
+    transition: all 0.5s;
+}
+
+.highlight {
+    color: var(--color10);
+}
+
 #about p {
-    width: 950px;
+    max-width: 900px;
 }
 
 #about h1 {
-    width: 950px;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 35px;
 }
 
 #about {
@@ -127,57 +276,46 @@ p {
     justify-content: center;
     align-items: center;
     justify-items: center;
-    width: 80%;
-    margin-bottom: 200px;
-    animation-name: about_showup;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
 }
 
-.about_nav_hidden {
-    margin-top: 380px;
+.video_nav_hidden {
+    margin-top: 100vh;
 }
 
-@keyframes about_showup {
-    from {
-        opacity: 0;
-        font-size: 7px;
-    }
-
-    to {
-        opacity: 100%;
-        font-size: 20px;
-    }
-}
-
-#contacto {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Titulos';
-    font-size: 50px;
+h3 {
+    font-family: 'Titulos_2';
+    font-size: 25px;
+    height: 40px;
+    letter-spacing: 2px;
 }
 
 h2 {
-    font-family: 'Titulos';
-    z-index: 2;
+    font-family: 'Titulos_2';
+    font-size: 35px;
+    text-align: center;
+    
 }
 
-#contacto h2 {
-    margin-bottom: 10px;
-}
-
-#form_contacto {
+footer {
+    height: 150px;
+    background-color: var(--color4);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 50px;
-    width: 350px;
 }
 
-input,
-textarea {
+footer h3 {
+    font-family: 'Titulos_2';
+}
+
+#backgroundsvg {
+    position: fixed;
+    z-index: 1;
+}
+
+textarea,
+input {
     all: unset;
     background-color: #00000050;
     border: rgba(0, 0, 0, 0.301) solid 3px;
@@ -191,114 +329,3 @@ textarea {
     z-index: 2;
     transition: all 0.5s;
 }
-
-input:focus-visible {
-    width: 350px;
-    transition: all 0.5s;
-}
-
-textarea:focus-visible {
-    width: 350px;
-    height: 150px;
-    transition: all 0.5s;
-}
-
-textarea::-webkit-scrollbar {
-    background-color: transparent;
-}
-
-#submit {
-    text-align: center;
-    width: 80px;
-    transition: width 0.5s ease-out;
-}
-
-#submit:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    width: 150px;
-    transition: all 0.5s ease-out;
-}
-
-#foot {
-    height: 80px;
-    background-color: black;
-}
-
-#backgroundsvg {
-    position: fixed;
-    z-index: 1;
-}
-
-/*Contacto*/
-.sidebar-contact {
-    position: fixed;
-    top: 60%;
-    left: -350px;
-    transform: translateY(-50%);
-    width: 350px;
-    height: auto;
-    padding: 40px;
-    background: #00000060;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
-    box-sizing: border-box;
-    transition: 0.5s;
-    z-index: 10;
-}
-
-.sidebar-contact.active {
-    left: 0;
-}
-
-.sidebar-contact input,
-.sidebar-contact textarea {
-    width: 100%;
-    height: 36px;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, .5);
-    outline: none;
-}
-
-.sidebar-contact h2 {
-    margin: 0 0 20px;
-    padding: 0;
-}
-
-.sidebar-contact textarea {
-    height: 60px;
-    resize: none;
-}
-
-.sidebar-contact input[type="submit"] {
-    background: var(--color3);
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-}
-
-.toggle {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    text-align: center;
-    cursor: pointer;
-    background: #00000060;
-    top: 0;
-    right: -48px;
-    line-height: 48px;
-}
-
-.toggle:before {
-    content: url("/resources/icons/email.svg");
-}
-
-.toggle.active:before {
-    font-family: 'Titulos';
-    content: 'X';
-    font-size: 20px;
-    color: #fff;
-}
-/*Contacto*/

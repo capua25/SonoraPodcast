@@ -1,62 +1,83 @@
- /* bloque etiqueta negra  */
- .fl-fl {
-   background: #00000060;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   padding: 4px;
-   width: 150px;
-   position: fixed;
-   right: -110px;
-   z-index: 1000;
-   font: normal normal 10px Arial;
-   -webkit-transition: all .25s ease;
-   -moz-transition: all .25s ease;
-   -ms-transition: all .25s ease;
-   -o-transition: all .25s ease;
-   transition: all .25s ease;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
- }
+/* Redes flotantes  */
+.fl-fl {
+  background: var(--color4);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  position: fixed;
+  right: -110px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 2px 2px 1px #00000050;
+}
 
- .fa {
-   color: #fff;
-   padding: 0;
-   width: 40px;
-   margin-left: 2px;
- }
+.fa {
+  color: #fff;
+  padding: 0;
+  width: 40px;
+  margin-left: 2px;
+}
 
- .fl-fl:hover {
-   right: 0;
- }
+.fl-fl:hover {
+  right: 0;
+}
 
- .fl-fl a {
-   color: #fff !important;
-   text-decoration: none;
-   text-align: center;
-   line-height: 43px !important;
-   vertical-align: top !important;
-   margin-left: 5px;
- }
+.fl-fl a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 5px;
+}
 
- .float-fb {
-   top: 350px;
- }
+.hide-fl {
+  right: -160px;
+}
 
- .float-tw {
-   top: 405px;
- }
+.float-tw {
+  top: 405px;
+}
 
- .float-ig {
-   top: 460px;
- }
+.float-ig {
+  top: 460px;
+}
 
- .float-yt {
-   top: 515px;
- }
+.float-yt {
+  top: 515px;
+}
 
- .float-spotify {
-   top: 570px;
- }
+.float-spotify {
+  top: 570px;
+}
 
- /* bloque etiqueta negra  */
+@supports (calc()) {
+  .float-tw {
+    top: calc(40% + 55px);
+  }
+
+  .float-ig {
+    top: calc(40% + 110px);
+  }
+
+  .float-yt {
+    top: calc(40% + 165px);
+  }
+
+  .float-spotify {
+    top: calc(40% + 220px);
+  }
+}
+
+/* Redes flotantes  */
