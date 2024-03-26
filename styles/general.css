@@ -55,7 +55,7 @@ body {
     background-image: url('../resources/fondo-p2.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-color: var(--color9);
     background-attachment: fixed;
 }
