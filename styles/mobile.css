@@ -44,8 +44,7 @@
   #cifespod,
   #playlist,
   #podcast,
-  #taller,
-  #newsletter {
+  #taller {
     width: 100%;
   }
 
@@ -58,46 +57,13 @@
     padding-bottom: 5vh;
   }
 
-  .prev,
-  .next {
-    font-size: 20px;
-    padding: 5px;
-    margin-top: 12rem;
-  }
-
-  #dot-container {
-    gap: 5px;
-    flex-wrap: wrap;
-    padding: 8px;
-  }
-
-  .dot {
-    height: 8px;
-    width: 8px;
-  }
-
   #sponsors {
     flex-direction: row;
     gap: 90px;
   }
 
-  /* #sponsors img {
+  #sponsors img {
     height: 20svw;
-  } */
-
-  .media-logos {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .logo2 {
-    max-width: 100px;
-    max-height: 80px;
-    width: 70%;
-    height: auto;
-    object-fit: contain;
   }
 
   #sponsors-2 {
@@ -207,12 +173,22 @@
   #cifespod,
   #playlist,
   #podcast,
-  #taller,
-  #newsletter {
+  #taller {
     margin: 0;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 0;
+  }
+
+  #sponsors {
+    margin: 0 0;
+    width: 100svw;
+    height: 150px;
+    padding: 0 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 0;
   }
 
   #sponsors h3 {
@@ -227,8 +203,6 @@
   #premios h3,
   #about p,
   #about h3,
-  #newsletter p,
-  #newsletter h2,
   #cifespod p,
   #cifespod h2,
   #carrousel h2 {
@@ -344,97 +318,41 @@
     top: calc(50% + 165px);
   }
 
-  .prev,
-  .next {
-    font-size: 18px;
-    padding: 6px;
-    margin-top: 9rem;
-  }
-
-  #dot-container {
-    gap: 5px;
-    flex-wrap: wrap;
-    padding: 8px;
-  }
-
-  .dot {
-    height: 8px;
-    width: 8px;
-  }
-
-
-  #sponsors {
-    width: 90svw;
-    padding: 0 0;
-    border-radius: 0;
-    box-sizing: border-box;
-    justify-content: center;
-    gap: 0;
-  }
-
-  .media-logos {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .logo2 {
-    max-width: 120px;
-    max-height: 90px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
   .logo1 {
-    min-width: 150px;
-    min-height: 100px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
- /*  .logo1 {
     min-width: 180px;
   }
 
   .logo2 {
     width: 180px;
     margin-left: 0;
-  } */
+  }
 
-/*   #sponsors .container-sp {
+  #sponsors .container-sp {
     width: 180px;
   }
 
   #sponsors .container-sp:first-child {
     margin-left: -40px;
-  } */
+  }
 
   #sponsors-2 h3 {
     text-align: center;
     font-size: 18px;
-    margin-bottom: 1rem;
   }
 
   .container-sp-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 30px;
-    justify-items: center;
-    align-items: center;
+    margin: auto;
     width: 90%;
-    margin: 0 auto;
+    gap: 35px 35px;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: auto auto auto auto; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
-  .logo-s,
-  .logo-ort,
-  .logo-ucu {
-    width: 100%;
+  .logo-s {
     max-width: 110px;
-    height: auto;
-    object-fit: contain;
   }
 
   footer {
@@ -449,7 +367,7 @@
   }
 
   .footer_logo {
-    max-width: 65px;
+    max-width: 35px;
   }
 
   .mec_logo {
@@ -547,30 +465,13 @@
     height: auto;
   }
 
-  .prev,
-  .next {
-    font-size: 12px;
-    padding: 5px;
-    margin-top: 5rem;
-  }
-
-  #dot-container {
-    gap: 3px;
-    padding: 5px;
-  }
-
-  .dot {
-    height: 5px;
-    width: 5px;
-  }
-
   .container-sp-2 {
     width: 80%;
     margin: auto;
-    display: grid;
-    flex-direction: column;
-    gap: 15px 15px;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    flex-direction: column; */
+    gap: 25px 25px;
+    /* grid-template-columns: auto auto; */
     justify-content: center;
     align-items: center;    
     /* flex-wrap: wrap; */
@@ -583,21 +484,8 @@
     font-size: 18px;
   }
 
-  .logo-s,
-  .logo-ort,
-  .logo-ucu {
-    width: 70%;
-    max-width: 70px;
-    height: auto;
-    object-fit: contain;
-  }
-
   .footer p {
     font-size: 7px;
-  }
-
-  .footer_logo {
-    max-width: 55px;
   }
 
   .licencia {
